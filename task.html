@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submission Example</title>
+  <style>
+    .warning {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<form id="myForm" onsubmit="return validateForm()">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+
+  <input type="submit" value="Submit">
+</form>
+
+<p id="warningMessage" class="warning"></p>
+
+<script>
+  function validateForm() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var warningMessage = document.getElementById('warningMessage');
+    if (username === '' || password === '') {
+      warningMessage.textContent = 'Please fill in all fields';
+      return false; 
+    } else {
+      warningMessage.textContent = ''; 
+      return true; 
+    }
+  }
+</script>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+
+</body>
+</html>

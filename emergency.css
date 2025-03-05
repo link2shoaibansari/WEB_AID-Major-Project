@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(120deg, #2980b9, #3498db);
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1em 0;
+    text-align: center;
+    animation: fadeInDown 1s ease-out;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    animation: fadeInUp 1s ease-out;
+}
+
+section h2 {
+    color: #2980b9;
+    margin-top: 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1a5276;
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+footer {
+    background: linear-gradient(90deg, #092a50 0%, #411018 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}

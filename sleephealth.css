@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(101, 74, 57);
+    background: linear-gradient(142deg, rgb(255, 194, 156));
+    color: #fff;
+}
+
+header {
+    background: #333;
+    text-align: center;
+    padding: 10px;body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 2px solid #ffcc00;
+        animation: headerFadeIn 1s ease-out;
+    }
+    
+    @keyframes headerFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    section {
+        background-color: #fff;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    section h2 {
+        color: #333;
+        margin-top: 0;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: fadeIn 1s ease-out;
+    }
+    
+    section p {
+        color: #666;
+        line-height: 1.5;
+    }
+    
+    section a {
+        color: #ffcc00;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    section a:hover {
+        color: #fff;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        animation: footerSlideIn 1s ease-out;
+    }
+    
+    @keyframes footerSlideIn {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgb(236, 255, 96);
+    background: linear-gradient(142deg, rgb(243, 228, 22) );
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.05);
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    color: #b6b6b6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #392503;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #3d1010;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* Custom Cursor Overlay */
+body {
+    cursor: none; /* Hide default cursor */
+}
+
+#custom-cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 9999;
+}
