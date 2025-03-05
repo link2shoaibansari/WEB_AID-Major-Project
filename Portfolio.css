@@ -1,0 +1,138 @@
+body {
+    font-family: 'Your-Unique-Font', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8f5; /* Creamy background */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #384259; /* Dark blue background */
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.member img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 30%;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.member img:hover {
+    transform: scale(1.2);
+}
+
+.member-info {
+    max-width: 600px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #384259; /* Dark blue background */
+    color: #fff;
+}
+
+/* Gradient background for member info */
+.member-info {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from orange to pink */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Colorful hover effect on images */
+.member img:hover {
+    transform: scale(1.2);
+    filter: hue-rotate(45deg); /* Rotate colors on hover */
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .member img {
+        margin: 0 auto 20px;
+    }
+}
+/* Custom Cursor Overlay */
+body {
+    cursor: none; /* Hide default cursor */
+}
+
+#custom-cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 9999;
+}
+/* Custom Cursor Overlay */
+.cursor {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.1));
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 10000;
+}
+
+/* Dark Mode and Light Mode Styles */
+body {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+.light-mode {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff0080, #ff8c00);
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff8c00, #ff0080);
+}

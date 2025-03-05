@@ -1,0 +1,174 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #a3cea1 0%, #b2f6b5 100%);
+}
+
+header {
+    background-color: #2c310e;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 0 0 10px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+nav {
+    background-color: #444;
+    padding: 0.5em 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #818262;
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #386cc7;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+    transition: background 1.5s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.fhalf, .shalf {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fhalf h2, .shalf h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.fhalf p, .shalf p {
+    color: #666666;
+}
+
+.shalf iframe {
+    width: 100%;
+    height: 300px;
+    border: 4px solid grey;
+    border-radius: 15px;
+}
+
+.section:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    background-color: #09291a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Custom Cursor Overlay */
+body {
+    cursor: none; /* Hide default cursor */
+}
+
+#custom-cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 9999;
+}
+/* Custom Cursor Overlay */
+.cursor {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.3), rgba(0, 255, 255, 0.1));
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 10000;
+}
+
+/* Dark Mode and Light Mode Styles */
+body {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+.light-mode {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff0080, #ff8c00);
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff8c00, #ff0080);
+}
